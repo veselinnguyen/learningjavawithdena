@@ -1,0 +1,26 @@
+target/
+docs/index.html
+docs/swagger-ui/*
+.project
+.metadata
+.classpath
+.checkstyle
+.settings/
+.tmp*
+
+nbproject/
+nbactions.xml
+
+.idea
+*.iml
+
+# General files #
+*.bak
+/.idea/
+.run/
+**/.DS_Store
+**/tmp/
+.gradle
+build/
+*.backup
+

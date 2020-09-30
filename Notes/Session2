@@ -1,8 +1,24 @@
 Java course session 2 --
-30 sepetember 2020
+30 september 2020
 18:00 to 19:00
 Learner: Dena
 Teacher:Veselin
 
-
 _________
+Method,
+________________
+Methodology (operations, pattern (based on four most common in HTTP protocol)) for Micro Services and APIs.
+CRUD -- Create, Read, Update, Delete
+________________
+
+We use void for methods where we want to execute something but not returning result.
+
+___________________
+Read about
+REST API,
+CRUD,
+HTTP,
+____________________
+the next session: Wednesday 7th October
+
+____________________

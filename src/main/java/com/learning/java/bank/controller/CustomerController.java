@@ -2,7 +2,6 @@ package com.learning.java.bank.controller;
 
 import com.learning.java.bank.domainmodel.Customer;
 import com.learning.java.bank.service.CustomerService;
-
 import java.util.UUID;
 
 public class CustomerController {

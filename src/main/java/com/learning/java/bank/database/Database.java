@@ -1,9 +1,6 @@
 package com.learning.java.bank.database;
 
-import com.learning.java.bank.domainmodel.Address;
-import com.learning.java.bank.domainmodel.AddressType;
-import com.learning.java.bank.domainmodel.Customer;
-import com.learning.java.bank.domainmodel.CustomerType;
+import com.learning.java.bank.domainmodel.*;
 
 import java.sql.Date;
 import java.time.Instant;
@@ -15,6 +12,11 @@ public class Database {
     private List<Customer> customers = new ArrayList<>();
 
     public Database() {
+
+        //Create Customer Object by using the lombok Builder of Customer. Do not usee constructors!
+        //new Person("John", "john@gmail.com", 15);
+        //Person.builder().age(30).name("John").email("email").build();
+
         Address address1 = new Address("Street", "1053JT", 29, AddressType.HOME_ADDRESS);
         Customer john = new Customer("John", "john@gmail.com", 15, address1, Date.from(Instant.now()), CustomerType.PRVT);
         customers.add(john);
@@ -28,8 +30,8 @@ public class Database {
         customers.add(falco);
 
         Address address4 = new Address("Street2", "1053BBT", 45, AddressType.WORK_ADDRESS);
-        Customer Dena = new Customer("Dena", "dena@gmail.com", 33, address1, Date.from(Instant.now()), CustomerType.PRVT);
-        customers.add(Dena);
+        Customer dena = new Customer("dena", "dena@gmail.com", 33, address4, Date.from(Instant.now()), CustomerType.PRVT);
+        customers.add(dena);
     }
 
     public List<Customer> getCustomers() {

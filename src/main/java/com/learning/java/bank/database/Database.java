@@ -26,6 +26,10 @@ public class Database {
         Address address3 = new Address("Street", "1053JT", 29, AddressType.HOME_ADDRESS);
         Customer falco = new Customer("Falco", "falco@gmail.com", 70, address3, Date.from(Instant.now()), CustomerType.BSN);
         customers.add(falco);
+
+        Address address4 = new Address("Street2", "1053BBT", 45, AddressType.WORK_ADDRESS);
+        Customer Dena = new Customer("Dena", "dena@gmail.com", 33, address1, Date.from(Instant.now()), CustomerType.PRVT);
+        customers.add(Dena);
     }
 
     public List<Customer> getCustomers() {

@@ -2,6 +2,7 @@ package com.learning.java.bank;
 
 import com.learning.java.bank.database.Database;
 import com.learning.java.bank.domainmodel.Customer;
+import org.springframework.beans.MutablePropertyValues;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -30,8 +31,18 @@ public class Main {
 
         //Modify
         //TODO: Modify specific customer based on predicate! stream().filter().map().collect();
+        //Predicate <? super Customer> startWithD = customer -> customer.getName() > [[[[how to define this filter]]];
+        /*List<Customer> dCustomer =
+                .stream()
+                .filter(s -> s.startsWith("d"))
+                .map(String::toUpperCase)
+                .sorted()
+                .collect()
+                .forEach(System.out::println);
+                */
 
-        //Group
+        //Group them by age
+        //.groupingBy(p -> p.age)
 
         //Import and use 3rd Party Libraries ex. Lombok
     }
